@@ -33,7 +33,20 @@
 For example consider the  data set that contains one column with categories,for example, France, Spain, or Germany. First, you might guess that it'll be difficult
 for machine learning model to compute some correlations between these columns, you know, the features and the outcome, which is the dependent variable.And therefore, of course we'll have to turn these strings I mean the categories into numbers. And this thing that we can do better is actually one hot encoding and one hot encoding consists of turning this country column into three columns. Why three columns? Because there are actually three different classes in this country column, you know, three different categories. If there were, for example, five countries here, we would turn this column into five columns. Let me explain this right away.
 So very simply, France would, for example have the vector 1 0 0. Spain would have the vector 0 1 0 and Germany would have the vector 0 0 1. So that then there is not a numerical order between the three countries because instead of having zero, one, and two, we would only have zeros and ones. And therefore, three new columns.
-   
+
+**That is called one hot encoding and that is a very useful and popular method to use when pre-processing your data sets containing categorical variables.**
+ 
+    ###### Encoding the independant variable
+    from sklearn.compose import ColumnTransformer
+    from sklearn.preprocessing import OneHotEncoder
+    ct=ColumnTransformer(transformer[{'encoder',OneHotEncoder(),[0])}, remainder='passthrough')
+    x=np.array(ct.fit_transformer(x))
+    
+      ###### Encoding the dependant variable
+      from sklearn.preprocessing import LabelEncoder
+      le=LabelEncoder()
+      y=le.fit_transform(y)
+    
    
    ###### Import Libraries
     import pandas as pd
