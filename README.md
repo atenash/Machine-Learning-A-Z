@@ -2,6 +2,14 @@
 ## Data Preprocessing
 ###### Spliting Data
    In this section we import the data, clean it and we split the data in to training and test set. Usually about 20% of the data is used for test set and 80% for training set. We'll use our training set to build the model. Then we will take the data from the test set and apply our model to them. So they(test data) haven't been part of the model creation process.The model has no information about test data. And the model predicting certain values. But the good news is that because this is something we separated in advance as part of the data that was given to us we actually know the actual values. So now we can compare the predicted values which were generated using a model that has never seen test data before to the actual values. And so from that we can evaluate our model.
+   
+   ###### Splitting the dataset
+      from sklearn.model_selection import train_test_split
+      x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2)
+   
+   point1: We do not apply fit method on test set because indeed the features of the test set need to be scaled by the same scaler that was used on the training set. We cannot get a new scaler.
+   
+   point2: we do not apply feature scaling on dummy variables because they are already in the range of [-3,3]
    ###### Feature Scaling
    Now, even without knowing anything about feature scaling, please remember that feature scaling is always applied to columns. Feature scaling is never applied across columns, so you wouldn't apply feature scaling to data inside a row.let's have a look at what feature scaling actually is. So there are multiple types of feature scaling, multiple techniques. We're going to look at the two main ones, **normalization** and **standardization**.
    
@@ -14,7 +22,17 @@
    
    ![Standard deviation](https://i.ytimg.com/vi/Uk98hiMQgN0/maxresdefault.jpg)
    
-   
+   ###### Feature Scaling Code
+      from sklearn.preprocessing import StandardScaler
+      sc=StandardScaler()
+      x_train=sc.fit_transform(x_train)
+      x_test=sc.transform(x_test)
+      
+###### Encoding categorical Data
+
+For example consider the  data set that contains one column with categories,for example, France, Spain, or Germany. First, you might guess that it'll be difficult
+for machine learning model to compute some correlations between these columns, you know, the features and the outcome, which is the dependent variable.And therefore, of course we'll have to turn these strings I mean the categories into numbers. And this thing that we can do better is actually one hot encoding and one hot encoding consists of turning this country column into three columns. Why three columns? Because there are actually three different classes in this country column, you know, three different categories. If there were, for example, five countries here, we would turn this column into five columns. Let me explain this right away.
+So very simply, France would, for example have the vector 1 0 0. Spain would have the vector 0 1 0 and Germany would have the vector 0 0 1. So that then there is not a numerical order between the three countries because instead of having zero, one, and two, we would only have zeros and ones. And therefore, three new columns.
    
    
    ###### Import Libraries
