@@ -36,27 +36,19 @@ So very simply, France would, for example have the vector 1 0 0. Spain would hav
 
 **That is called one hot encoding and that is a very useful and popular method to use when pre-processing your data sets containing categorical variables.**
  
-    ###### Encoding the independant variable
+   ###### Encoding the independant variable
     from sklearn.compose import ColumnTransformer
     from sklearn.preprocessing import OneHotEncoder
     ct=ColumnTransformer(transformer[{'encoder',OneHotEncoder(),[0])}, remainder='passthrough')
     x=np.array(ct.fit_transformer(x))
     
-      ###### Encoding the dependant variable
+   ###### Encoding the dependant variable
       from sklearn.preprocessing import LabelEncoder
       le=LabelEncoder()
       y=le.fit_transform(y)
     
+   **Taking care of missing data**
    
-   ###### Import Libraries
-    import pandas as pd
-    import numpy as np
-    import matplotlib.pyplot as plt
-   
-   ###### Import Dataset
-    dataset=pd.read_csv('url')
-    
-   ###### Taking care of missing data
    **Removing Missing Value**
    
 Generally you don't want to have any missing data in your data set, for the simple reason that it can cause some errors when training your machine learning model, and therefore you must handle them. There are actually several ways to handle them, a first way is to just ignore the observation by deleting it.
@@ -84,5 +76,15 @@ imputer.transform(selected columns)
 Be careful, this transform method actually returns the new updated version of the matrix features with replacements of the missing values. And therefore, what we want to do now and that's the last we have to do is to indeed update our matrix of features 
 
 selected columns=imputer.fit(selected columns)
+
+
+ 
+   ###### Import Libraries
+    import pandas as pd
+    import numpy as np
+    import matplotlib.pyplot as plt
+   
+   ###### Import Dataset
+    dataset=pd.read_csv('url')
 
     
