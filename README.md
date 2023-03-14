@@ -89,4 +89,36 @@ selected columns=imputer.fit(selected columns)
    ###### Import Dataset
     dataset=pd.read_csv('url')
 
+
+
+
+## Regression
+   Regression models (both linear and non-linear) are used for predicting a real value. Let's have a look at simple linear regression equation.
+   
+   ![Regression Equation](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*GSAcN9G7stUJQbuOhu0HEg.png)
+   
+   
+   
+   We will look at the parts of this equation one by one. So on the left, we have our dependent variable, which we're trying to predict.
+   On the right, we have our independent variable, which is the predictor. Here we have b0, which is the constant, and b1 is the slope coefficient.
+   
+   ###### Simple Linear Regression
+     from sklearn.linear_model import LinearRegression
+     reg=LinearRegression()
+     reg.fit(x_train,y_train)
+  
+  ###### Predicting the test set result
+     y_pred=reg.predict(x_test)
+     
+ 
+ Question 1: How do I use my simple linear regression model to make a single prediction, for example, to predict the salary of an employee with 12 years of experience?
+   ###### Question 1
+     print(regressor.predict([[12]]))
+
+Question 2: How do I get the final regression equation y = b0 + b1 x with the final values of the coefficients b0 and b1? To help you tackle these common challenges, I’ve created a BONUS that addresses the concepts and steps you need to solve them—code included!
+
+  ###### Question 2
+    print(regressor.coef_)
+    print(regressor.intercept_)
+
     
