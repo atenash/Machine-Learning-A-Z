@@ -7,9 +7,6 @@
       from sklearn.model_selection import train_test_split
       x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2)
    
-   point1: We do not apply fit method on test set because indeed the features of the test set need to be scaled by the same scaler that was used on the training set. We cannot get a new scaler.
-   
-   point2: we do not apply feature scaling on dummy variables because they are already in the range of [-3,3]
    ###### Feature Scaling
    Now, even without knowing anything about feature scaling, please remember that feature scaling is always applied to columns. Feature scaling is never applied across columns, so you wouldn't apply feature scaling to data inside a row.let's have a look at what feature scaling actually is. So there are multiple types of feature scaling, multiple techniques. We're going to look at the two main ones, **normalization** and **standardization**.
    
@@ -27,7 +24,11 @@
       sc=StandardScaler()
       x_train=sc.fit_transform(x_train)
       x_test=sc.transform(x_test)
-      
+
+
+   point1: We do not apply fit method on test set because indeed the features of the test set need to be scaled by the same scaler that was used on the training set. We cannot get a new scaler.
+   
+   point2: we do not apply feature scaling on dummy variables because they are already in the range of [-3,3]
 ###### Encoding categorical Data
 
 For example consider the  data set that contains one column with categories,for example, France, Spain, or Germany. First, you might guess that it'll be difficult
@@ -57,19 +58,20 @@ That's one method, and this actually works if you have a large data set, and you
 **Replacing by Average**
 
 Now a second way is to actually replace the missing data, the missing value by the average of all the values in the column in which the data is missing. This is a classic way of handling missing data. 
-from sklearn.impute import simpleimputer
-imputer=simpleimputer(missing_values=np.nan, strategy='mean')
 
 So the next step is indeed to apply this imputer object on the matrix of features. So how are we going to do that?
 Well, remember that a class contains an assemble of instructions but also some operations and actions which you can apply to other objects or variables. And these are called methods. You know, they're like functions and one of them is exactly the **fit method**
-The fit method will exactly connect this imputer to the matrix of features. In other words, what this fit method will do is it will look at the missing values in selected column and also it will compute the average vakues of that columns.
-
-imputer.fit(selected columns)
+The fit method will exactly connect this imputer to the matrix of features. In other words, what this fit method will do is it will look at the missing values in selected column and also it will compute the average values of that columns.
 
 All right, so that's simply what it will do. And then that will not be enough to do the replacement we want.
 To do the replacement we'll have to call another method called **transform** and which will this time apply the transformation meaning it will replace the missing value by the average of the values.
 
-imputer.transform(selected columns)
+  ###### Missing values
+    from sklearn.impute import simpleimputer
+    imputer=simpleimputer(missing_values=np.nan, strategy='mean')
+    imputer.fit(selected columns)
+    imputer.transform(selected columns)
+   
 
 **caution**
 
