@@ -61,7 +61,7 @@ So very simply, France would, for example have the vector 1 0 0. Spain would hav
       le=LabelEncoder()
       y=le.fit_transform(y)
     
- ## Missing Data
+## Missing Data
    
    **Removing Missing Value**
    
@@ -105,7 +105,7 @@ selected columns=imputer.fit(selected columns)
 
 
 
-## Regression
+# Regression
    Regression models (both linear and non-linear) are used for predicting a real value. Let's have a look at simple linear regression equation.
    
    ![Regression Equation](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*GSAcN9G7stUJQbuOhu0HEg.png)
