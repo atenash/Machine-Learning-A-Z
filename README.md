@@ -7,7 +7,10 @@ Here is the list of topics we will be covering in this tutorial:
   - [Spliting Data?](#spliting-data)
   - [Feature Scaling?](#feature-scaling)
   - [Encoding categorical Data](#encoding-categorical-data)
-  - [ Taking care of missing data](taking-care-of-missing-data)
+  - [Missing Data](missing-data)
+
+
+ * [Regression](regression)
     
 # Data Preprocessing
 ## Spliting Data
@@ -58,7 +61,7 @@ So very simply, France would, for example have the vector 1 0 0. Spain would hav
       le=LabelEncoder()
       y=le.fit_transform(y)
     
-  ## Taking care of missing data
+ ## Missing Data
    
    **Removing Missing Value**
    
