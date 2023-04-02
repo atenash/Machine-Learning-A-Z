@@ -9,8 +9,8 @@ Here is the list of topics we will be covering in this tutorial:
   - [Encoding categorical Data](#encoding-categorical-data)
   - [Missing Data](missing-data)
 
-
  * [Regression](regression)
+   
     
 # Data Preprocessing
 ## Spliting Data
@@ -106,6 +106,7 @@ selected columns=imputer.fit(selected columns)
 
 
 # Regression
+
    Regression models (both linear and non-linear) are used for predicting a real value. Let's have a look at simple linear regression equation.
    
    ![Regression Equation](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*GSAcN9G7stUJQbuOhu0HEg.png)
