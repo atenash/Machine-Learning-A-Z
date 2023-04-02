@@ -1,13 +1,23 @@
 # Machine-Learning-A-Z
-## Data Preprocessing
-###### Spliting Data
+
+Here is the list of topics we will be covering in this tutorial:
+
+* [Data preprocessing](#data-preprocessing)
+
+  - [Spliting Data?](#spliting-data)
+  - [Feature Scaling?](#feature-scaling)
+  - [Encoding categorical Data](#encoding-categorical-data)
+  - [ Taking care of missing data](taking-care-of-missing-data)
+    
+# Data Preprocessing
+## Spliting Data
    In this section we import the data, clean it and we split the data in to training and test set. Usually about 20% of the data is used for test set and 80% for training set. We'll use our training set to build the model. Then we will take the data from the test set and apply our model to them. So they(test data) haven't been part of the model creation process.The model has no information about test data. And the model predicting certain values. But the good news is that because this is something we separated in advance as part of the data that was given to us we actually know the actual values. So now we can compare the predicted values which were generated using a model that has never seen test data before to the actual values. And so from that we can evaluate our model.
    
    ###### Splitting the dataset
       from sklearn.model_selection import train_test_split
       x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2)
    
-   ###### Feature Scaling
+ ## Feature Scaling
    Now, even without knowing anything about feature scaling, please remember that feature scaling is always applied to columns. Feature scaling is never applied across columns, so you wouldn't apply feature scaling to data inside a row.let's have a look at what feature scaling actually is. So there are multiple types of feature scaling, multiple techniques. We're going to look at the two main ones, **normalization** and **standardization**.
    
    **Normalization** is the process of taking the minimum inside a column, subtracting that minimum from every single value inside that column, and then dividing by the difference between the maximum and the minimum. So basically, every single value in a column is adjusted this way and you will end up with a new column or an adjusted column with values which are all between **0 and 1**.
@@ -29,7 +39,7 @@
    point1: We do not apply fit method on test set because indeed the features of the test set need to be scaled by the same scaler that was used on the training set. We cannot get a new scaler.
    
    point2: we do not apply feature scaling on dummy variables because they are already in the range of [-3,3]
-###### Encoding categorical Data
+## Encoding categorical Data
 
 For example consider the  data set that contains one column with categories,for example, France, Spain, or Germany. First, you might guess that it'll be difficult
 for machine learning model to compute some correlations between these columns, you know, the features and the outcome, which is the dependent variable.And therefore, of course we'll have to turn these strings I mean the categories into numbers. And this thing that we can do better is actually one hot encoding and one hot encoding consists of turning this country column into three columns. Why three columns? Because there are actually three different classes in this country column, you know, three different categories. If there were, for example, five countries here, we would turn this column into five columns. Let me explain this right away.
@@ -48,7 +58,7 @@ So very simply, France would, for example have the vector 1 0 0. Spain would hav
       le=LabelEncoder()
       y=le.fit_transform(y)
     
-   **Taking care of missing data**
+  ## Taking care of missing data
    
    **Removing Missing Value**
    
