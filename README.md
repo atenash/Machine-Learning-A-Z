@@ -9,11 +9,14 @@ Here is the list of topics we will be covering in this tutorial:
   - [Encoding categorical Data](#encoding-categorical-data)
   - [Missing Data](#missing-data)
 
-* [Supervised algorithms](#supervised-algorithms)
+* [Supervised learning](#supervised-learning)
 
 * [Regression](#regression)
 
+* [Unsupervised learning](#supervised-learning)
+
 * [Clustering](#clustering)
+ - [Kmean algorithm](#kmean-algorithm)
    
     
 # Data Preprocessing
@@ -106,7 +109,7 @@ selected columns=imputer.fit(selected columns)
    ###### Import Dataset
     dataset=pd.read_csv('url')
 
-# Supervised algorithms
+# Supervised learning
 
 The way supervised learning algorithms work is that you already have some training data and an answer and answers in that training data that you supply to the model.
 So, for example, in the case of classification, you have input data, which could be images of apples and you have annotations explaining these are apples
@@ -143,7 +146,11 @@ Question 2: How do I get the final regression equation y = b0 + b1 x with the fi
     print(regressor.intercept_)
 
  
+ # Unsupervised learning
  
+ Now, unsupervised learning is different. Here, we don't have answers, and the model has to think for itself. So, for example, we might have input data for these images without any labels, supply them to the model and ask them to group these fruits into different categories, even though we don't know the category,
+we don't supply the categories. So the machine has no understanding which is an apple, which is a banana, and so on. It can just see that there are certain similarities in the data, certain differences in the data, and from that it can make conclusions and create its own groups. And this is all the while it doesn't understand what it is looking at, doesn't understand the term apple or banana. So, that is the difference between supervised and unsupervised learning. In a nutshell, in supervised learning, you give the model an opportunity to train where it has the answers. In unsupervised learning, you don't have the answers to supply to the model.
+
  # Clustering
  
  Unsupervised machine learning
@@ -151,3 +158,13 @@ Question 2: How do I get the final regression equation y = b0 + b1 x with the fi
  Grouping unlabled data
  
 Clustering is similar to classification, but the basis is different. In Clustering you don’t know what you are looking for, and you are trying to identify some segments or clusters in your data. When you use clustering algorithms on your dataset, unexpected things can suddenly pop up like structures, clusters and groupings you would have never thought of otherwise.
+
+## Kmean algorithm
+
+Consider we have a scatter plot of our data points and we want K-Means Clustering to create clusters. So we don't have any classes or categories in advance, we don't have any training data, we just have this data, and we want to create the clusters.
+Well, the first thing is that you need to decide how many clusters you want. Let's say, we decided on two clusters. Then, for each cluster you need to place a randomly placed a centriod on the scatter plot, wherever you like. It doesn't have to be one of the existing points.
+Now, what happens next is K-Means will assign each of the data points to the closest centroid. Now, the next step is quite interesting. We need to calculate the centre of mass or center of gravity for each of the clusters, the preliminary clusters that we've identified. Of course, the centroid is not included in this calculation. So for example, for the blue cluster, we need to take all the X coordinates and take the average, and take all the Y coordinates, take the average.
+That'll give us the position of the center of mass. And then we move the centroid to those positions.
+Once they've moved, we repeat the process, we reassign data points to the closest centroid.
+
+Reassign, calculate the center of mass, move the centroids, do the process again. And until we get into situation where doing the process again doesn't change anything. And so that means we've come to the end of the K-Means Clustering step by step process.
