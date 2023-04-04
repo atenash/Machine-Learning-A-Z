@@ -7,11 +7,13 @@ Here is the list of topics we will be covering in this tutorial:
   - [Spliting Data?](#spliting-data)
   - [Feature Scaling?](#feature-scaling)
   - [Encoding categorical Data](#encoding-categorical-data)
-  - [Missing Data](missing-data)
+  - [Missing Data](#missing-data)
 
- * [Regression](regression)
+* [Supervised algorithms](#supervised-algorithms)
 
- * [Clustering](clustering)
+* [Regression](#regression)
+
+* [Clustering](#clustering)
    
     
 # Data Preprocessing
@@ -104,8 +106,11 @@ selected columns=imputer.fit(selected columns)
    ###### Import Dataset
     dataset=pd.read_csv('url')
 
+# Supervised algorithms
 
-
+The way supervised learning algorithms work is that you already have some training data and an answer and answers in that training data that you supply to the model.
+So, for example, in the case of classification, you have input data, which could be images of apples and you have annotations explaining these are apples
+or labels for these apples. And then you supply that to the model. You ask the model to learn from these, from this data with answers. And then you can supply a new image and ask, "What is this?" And it will provide the answer saying that this is an apple.
 
 # Regression
 
@@ -140,4 +145,9 @@ Question 2: How do I get the final regression equation y = b0 + b1 x with the fi
  
  
  # Clustering
+ 
+ Unsupervised machine learning
+ 
+ Grouping unlabled data
+ 
 Clustering is similar to classification, but the basis is different. In Clustering you don’t know what you are looking for, and you are trying to identify some segments or clusters in your data. When you use clustering algorithms on your dataset, unexpected things can suddenly pop up like structures, clusters and groupings you would have never thought of otherwise.
