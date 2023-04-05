@@ -19,6 +19,10 @@ Here is the list of topics we will be covering in this tutorial:
 
    - [Kmean algorithm](#kmean-algorithm)
    
+    - [Elbow method](#elbow-method)
+        
+     
+   
     
 # Data Preprocessing
 ## Spliting Data
@@ -165,3 +169,18 @@ Clustering is similar to classification, but the basis is different. In Clusteri
 Consider we have a scatter plot of our data points and we want K-Means Clustering to create clusters. So we don't have any classes or categories in advance, we don't have any training data. We just have this data, and we want to create the clusters.
 Well, the first thing is that you need to decide how many clusters you want. Let's say, we decided on two clusters. Then, for each cluster you need to place a randomly centriod on the scatter plot, wherever you like. It doesn't have to be one of the existing points. Now, what happens next is K-Means will assign each of the data points to the closest centroid. Now, the next step is quite interesting. We need to calculate the centre of mass for each of the clusters, the preliminary clusters that we've identified. Of course, the centroid is not included in this calculation. So for example, we need to take all the X coordinates and take the average, and take all the Y coordinates, take the average. That'll give us the position of the center of mass. And then we move the centroid to those positions.
 Once they've moved, we repeat the process, we reassign data points to the closest centroid. Reassign, calculate the center of mass, move the centroids, do the process again. And until we get into situation where doing the process again doesn't change anything. So that means we've come to the end of the K-Means Clustering step by step process.
+
+## Elbow method
+
+The question is, how do we decide how many clusters to select? Well, the elbow method is one of the approaches to help you make this decision. So the elbow method requires us to look at the equation for the Within Cluster Sum of Squares, or the WCSS. It basically looks at the distance between each point and the centroid of its cluster, square that distance and add them up. 
+
+![WCSS](https://av-eks-blogoptimized.s3.amazonaws.com/43191elbow_img%20(1).png)
+
+To calculate all these different within cluster sum of squares for the different options, we actually need the clusters to already exist. So every time, we have to first run the k-means clustering algorithm, and then we calculate the WCSS. So it's kind of a bit backwards. We don't first do the elbow method to find the optimal number of clusters and then do k-means.
+
+We do k-means many times, find the WCSS for every single setup, whether it's one cluster, 2, 3, 4, 5, and so on,and then we will be able to apply the elbow method. And the second thing to note is that the more clusters we have,the smaller WCSS becomes.
+
+ ![elbow method]()
+ 
+ The elbow method  actually a visual method. when you look at this chart and you look for where is the kink in this chart, where is the elbow. And so that is your optimal number of clusters, basically when the WCSS stops dropping as rapidly.
+
