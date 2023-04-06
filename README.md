@@ -193,4 +193,10 @@ We do k-means many times, find the WCSS for every single setup, whether it's one
      plt.plot(range(,),wcss)
      reg=LinearRegression()
      reg.fit(x_train,y_train)
-
+     
+     
+   ###### Training the Kmeans model on dataset
+     from sklearn.cluster import KMeans
+     kmeans=KMeans(n_clusters=n(based on elbow method result), init='k-means++', random_state=)
+     y_kmeans=kmeans.fit_predict(x)
+    
