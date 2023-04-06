@@ -182,4 +182,15 @@ We do k-means many times, find the WCSS for every single setup, whether it's one
  ![elbow method]()
  
  The elbow method  actually a visual method. when you look at this chart and you look for where is the kink in this chart, where is the elbow. And so that is your optimal number of clusters, basically when the WCSS stops dropping as rapidly.
+ 
+  ###### elbow method
+     from sklearn.cluster import KMeans
+     wcss=[]
+     for i in range(,):
+        kmeans=KMeans(n_clusters=i, init='k-means++', random_state=)
+        kmeans.fit(data)
+        wcss.append(kmeans.inertia_)
+     plt.plot(range(,),wcss)
+     reg=LinearRegression()
+     reg.fit(x_train,y_train)
 
