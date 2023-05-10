@@ -172,16 +172,13 @@ Once they've moved, we repeat the process, we reassign data points to the closes
 ## Elbow method
 
 The question is how do we decide how many clusters to select? Well, the elbow method is one of the approaches to help you make this decision. So the elbow method requires us to look at the equation for the Within Cluster Sum of Squares, or the WCSS. It basically looks at the distance between each point and the centroid of its cluster, square that distance and add them up. 
+
 ![43191elbow_img (1)](https://github.com/atenash/Machine-Learning-A-Z/assets/123215187/3720494f-117a-44b0-b65e-762249292578)
 
-
-![WCSS](https://av-eks-blogoptimized.s3.amazonaws.com/43191elbow_img%20(1).png)
 
 To calculate all these different within cluster sum of squares for the different options, we actually need the clusters to already exist. So every time, we have to first run the k-means clustering algorithm, and then we calculate the WCSS. So it's kind of a bit backwards. We don't first do the elbow method to find the optimal number of clusters and then do k-means.
 
 We do k-means many times, find the WCSS for every single setup, whether it's one cluster, 2, 3, 4, 5, and so on,and then we will be able to apply the elbow method. And the second thing to note is that the more clusters we have,the smaller WCSS becomes.
-
- ![elbow method]()
  
  The elbow method  actually a visual method. when you look at this chart and you look for where is the kink in this chart, where is the elbow. And so that is your optimal number of clusters, basically when the WCSS stops dropping as rapidly.
  
