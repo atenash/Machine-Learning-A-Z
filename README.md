@@ -116,9 +116,9 @@ Be careful, this transform method actually returns the new updated version of th
 
 # Supervised learning
 
-The way supervised learning algorithms work is that you already have some training data and an answer and answers in that training data that you supply to the model.
+The way supervised learning algorithms work is that you already have some training data and answers in that training data that you supply to the model.
 So, for example, in the case of classification, you have input data, which could be images of apples and you have annotations explaining these are apples
-or labels for these apples. And then you supply that to the model. You ask the model to learn from these, from this data with answers. And then you can supply a new image and ask, "What is this?" And it will provide the answer saying that this is an apple.
+or labels for these apples. And then you supply that to the model. You ask the model to learn from this data with answers. And then you can supply a new image and ask, "What is this?" And it will provide the answer saying that this is an apple.
 
 # Regression
 
