@@ -172,6 +172,8 @@ Once they've moved, we repeat the process, we reassign data points to the closes
 ## Elbow method
 
 The question is how do we decide how many clusters to select? Well, the elbow method is one of the approaches to help you make this decision. So the elbow method requires us to look at the equation for the Within Cluster Sum of Squares, or the WCSS. It basically looks at the distance between each point and the centroid of its cluster, square that distance and add them up. 
+![43191elbow_img (1)](https://github.com/atenash/Machine-Learning-A-Z/assets/123215187/3720494f-117a-44b0-b65e-762249292578)
+
 
 ![WCSS](https://av-eks-blogoptimized.s3.amazonaws.com/43191elbow_img%20(1).png)
 
