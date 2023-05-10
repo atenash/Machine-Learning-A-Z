@@ -78,7 +78,7 @@ So very simply, France would, for example have the vector 1 0 0. Canada would ha
    **Removing Missing Value**
    
 Generally you don't want to have any missing data in your data set, for the simple reason that it can cause some errors when training your machine learning model, and therefore you must handle them. There are actually several ways to handle them, a first way is to just ignore the observation by deleting it.
-That's one method, and this actually works if you have a large data set, and you know if you have only 1% missing data, you know removing 1% of the observations won't change much the learning quality of your model, so 1% is fine, but sometimes you can have a lot of missing data, and therefore you must handle them the right way.
+That's one method, and this actually works if you have a large data set, if you have only 1% missing data,removing them won't change much the learning quality of your model, so 1% is fine, but sometimes you can have a lot of missing data, and therefore you must handle them the right way.
 
 **Replacing by Average**
 
@@ -102,7 +102,7 @@ To do the replacement we'll have to call another method called **transform** and
 
 Be careful, this transform method actually returns the new updated version of the matrix features with replacements of the missing values. And therefore, what we want to do now and that's the last we have to do is to indeed update our matrix of features 
 
-selected columns=imputer.fit(selected columns)
+     selected columns=imputer.fit(selected columns)
 
 
  
