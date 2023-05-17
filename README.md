@@ -1,4 +1,4 @@
-# Machine-Learning-A-Z
+# Machine-Learning
 
 Here is the list of topics we will be covering in this tutorial:
 
