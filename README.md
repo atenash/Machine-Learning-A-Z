@@ -199,4 +199,14 @@ We do k-means many times, find the WCSS for every single setup, whether it's one
      from sklearn.cluster import KMeans
      kmeans=KMeans(n_clusters=n(based on elbow method result), init='k-means++', random_state=)
      y_kmeans=kmeans.fit_predict(x)
+     
+
+
+
+* [Deep Learning](#deep-learning)
+
+  - [Spliting Data?](#spliting-data)
+  - [Feature Scaling?](#feature-scaling)
+  - [Encoding categorical Data](#encoding-categorical-data)
+  - [Missing Data](#missing-data)
     
