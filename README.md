@@ -24,7 +24,7 @@ Here is the list of topics we will be covering in this tutorial:
  * [Deep Learning](#deep-learning)
 
   - [What is_Deep_Learning?](#what-is-deep-learning)
-  - [Feature Scaling?](#feature-scaling)
+  - [Deep_Learning_Sections?](#deep-learning-sections)
   - [Encoding categorical Data](#encoding-categorical-data)
   - [Missing Data](#missing-data)
     
@@ -221,3 +221,8 @@ So how do we recreate this in a computer? Well, we recreate an artificial struct
 
 
 
+## Deep Learning Sections
+
+The Neuron
+
+It is the basic building block of artificial neuron networks. Our first challenge is to recreate a neuron. The neuron gets some input signals and it has an output signal. The input signal  are in fact independent variables. The Output value can be continuous. Like price. It can be binary. For instance, a person will exit or will stay or it can be a categorical variable. And if it's a categorical variable the important thing to remember here is that in that case your output value won't be just one it'll be several output values because these will be your dummy variables which will be representing your categories.
