@@ -217,7 +217,7 @@ But, nevertheless, there's a hundred billion neurons in the human brain and each
 
 So how do we recreate this in a computer? Well, we recreate an artificial structure called an artificial neural network. Where we have neurons, some of them for input value. For example, you want to predict something, you're always going to have some input. That's called the input layer. Then you have the output, so that's value that you want to predict. Is somebody going to leave the bank or stay in the bank? Is this a fraudulent transaction or is this a real transaction? So that's going to be output layer. And in between, we're going to have a hidden layer. So, as you can see in your brain you have so many neurons. Some information is coming through your eyes, ears, nose. Then it's not just going straightly to the output where you have the result. It's going through all of these billions and billions and billions of neurons before it gets to the output. So we need these hidden layers that are there before the output. The input layer neurons are connected to the hidden layer. Neurons in the hidden layers are connected to the output value.Where is the deep learning here? Why is it called deep learning? Because we have not just one hidden layer, we have lots and lots and lots of hidden layers. And then we connect everything just like in the human brain. Connect everything, inter connect everything and now we're talking deep learning. So that's what deep learning is all about on a very abstract level.
 
-![alt text](D:\python\Udemy\Machine Learning\Machine Learning-A-Z-Codes-Datasets\deep learning.jpeg)
+![43191elbow_img (1)](https://github.com/atenash/Machine-Learning-A-Z/assets/123215187/3720494f-117a-44b0-b65e-762249292578)
 
 
 
