@@ -271,3 +271,12 @@ Hyperbolic Tangent
 
 
 ![hyperbolic.jpeg](https://github.com/atenash/Machine-Learning-A-Z/blob/main/hyperbolic.jpeg)
+
+
+
+
+So in the first input layer, we have some inputs. They're sent off to our first hidden layer and then an activation function is applied. We apply the rectifier activation function and then from there, the signals would be passed on to the output layer where the sigmoid activation function would be applied and that would be our final output. And that could predict a probability, for instance. So this combination is gonna be quite common where in the hidden layers, we apply the rectifier function, and then in the output layer, we apply the sigmoid function.
+
+
+
+![hyperbolic.jpeg](https://github.com/atenash/Machine-Learning-A-Z/blob/main/hyperbolic.jpeg)
