@@ -252,7 +252,22 @@ On the X-axis, you have the weighted sum of inputs. On the Y-axis, you have the 
 
 Sigmoid Function
 
-![threshold function.jpeg](https://github.com/atenash/Machine-Learning-A-Z/blob/main/threshold%20function.jpeg)
+
+![sigmoid.jpeg](https://github.com/atenash/Machine-Learning-A-Z/blob/main/sigmoid.jpeg)
 
 
 There is 1 divided by 1 plus e to the power of -x. Whereas, x is the value of the sum of the weighted sums. This sigmoid function is very useful in the final layer, in the output layer, especially when you are trying to predict probabilities.
+
+
+The rectifier function
+
+
+![Rectifier.jpeg](https://github.com/atenash/Machine-Learning-A-Z/blob/main/Rectifier.jpeg)
+
+Is one of the most popular functions for artificial neural network. So it goes all the way to zero, it is zero. And then from there, it gradually progresses as the input value increases as well.
+
+
+Hyperbolic Tangent
+
+
+![hyperbolic.jpeg](https://github.com/atenash/Machine-Learning-A-Z/blob/main/hyperbolic.jpeg)
