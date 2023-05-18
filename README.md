@@ -248,3 +248,11 @@ Threshold Function
 
 
 On the X-axis, you have the weighted sum of inputs. On the Y-axis, you have the values from zero to one. And basically, the threshold function is a very simple type of function where if the value is less than zero then the threshold function passes on zero. If the value is more than zero or equal to zero then threshold function passes on a one.
+
+
+Sigmoid Function
+
+![threshold function.jpeg](https://github.com/atenash/Machine-Learning-A-Z/blob/main/threshold%20function.jpeg)
+
+
+There is 1 divided by 1 plus e to the power of -x. Whereas, x is the value of the sum of the weighted sums. This sigmoid function is very useful in the final layer, in the output layer, especially when you are trying to predict probabilities.
