@@ -237,3 +237,14 @@ So signals go into the neuron and what happens in the neuron. Just add up, multi
 
 ![Neuron 2.jpeg](https://github.com/atenash/Machine-Learning-A-Z/blob/main/Neuron%202.jpeg)
 
+
+The Activation Function
+
+it's basically a function that is assigned to this neuron or to this whole layer and it is applied to this weighted sum. And then from that, the neuron understands if it needs to pass on a signal. The structure of one neuron has some inputs, values coming in, it's got some weights then it adds up the weighted,it calculates the weighted and then applies the activation function. And on step three, it passes on the signal to the next neuron.
+
+Threshold Function
+
+![Neuron 2.jpeg](https://github.com/atenash/Machine-Learning-A-Z/blob/main/Neuron%202.jpeg)
+
+
+On the X-axis, you have the weighted sum of inputs. On the Y-axis, you have the values from zero to one. And basically, the threshold function is a very simple type of function where if the value is less than zero then the threshold function passes on zero. If the value is more than zero or equal to zero then threshold function passes on a one.
