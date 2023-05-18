@@ -212,4 +212,7 @@ We do k-means many times, find the WCSS for every single setup, whether it's one
 # Deep Learning
 ## What is Deep Learning?
 
+Jeffrey Hinton  is known as a godfather of deep learning. The idea behind deep learning is to look at the human brain. We don't know everything about the human brain. But that little amount that we know, we want to mimic it and recreate it. And why is it that? Well, because the human brain seems to be the one of the most powerful tools on this planet for learning, adapting skills, and applying them. And if computers could copy that, then we can just leverage what natural selection has. Like re-inventing the bicycle. A neurons are like a body, they have branches. In the human brain, there's approximately a hundred billion neurons altogether.
+But, nevertheless, there's a hundred billion neurons in the human brain and each neuron is connected to as many as thousand of its neighbors. And that's what we're going to try to recreate.
+
 
