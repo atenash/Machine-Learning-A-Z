@@ -20,6 +20,14 @@ Here is the list of topics we will be covering in this tutorial:
    - [Kmean algorithm](#kmean-algorithm)
    
     - [Elbow method](#elbow-method)
+ 
+ * [Deep Learning](#deep-learning)
+
+  - [What is_Deep_Learning?](#what-is-deep-learning)
+  - [Feature Scaling?](#feature-scaling)
+  - [Encoding categorical Data](#encoding-categorical-data)
+  - [Missing Data](#missing-data)
+    
         
      
    
@@ -201,12 +209,7 @@ We do k-means many times, find the WCSS for every single setup, whether it's one
      y_kmeans=kmeans.fit_predict(x)
      
 
+# Deep Learning
+## What is Deep Learning?
 
 
-* [Deep Learning](#deep-learning)
-
-  - [Spliting Data?](#spliting-data)
-  - [Feature Scaling?](#feature-scaling)
-  - [Encoding categorical Data](#encoding-categorical-data)
-  - [Missing Data](#missing-data)
-    
