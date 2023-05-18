@@ -235,5 +235,5 @@ Next thing that I want to talk about is weights. Weights are crucial to our arti
 
 So signals go into the neuron and what happens in the neuron. Just add up, multiply by the weight and add them up.And then it applies an activation function.
 
-![Neuron 2.jpeg](https://github.com/atenash/Machine-Learning-A-Z/blob/main/Neuron%201.jpeg)
+![Neuron 2.jpeg](https://github.com/atenash/Machine-Learning-A-Z/blob/main/Neuron%202.jpeg)
 
