@@ -244,7 +244,7 @@ it's basically a function that is assigned to this neuron or to this whole layer
 
 Threshold Function
 
-![Neuron 2.jpeg](https://github.com/atenash/Machine-Learning-A-Z/blob/main/Neuron%202.jpeg)
+![threshold function.jpeg](https://github.com/atenash/Machine-Learning-A-Z/blob/main/threshold%20function.jpeg)
 
 
 On the X-axis, you have the weighted sum of inputs. On the Y-axis, you have the values from zero to one. And basically, the threshold function is a very simple type of function where if the value is less than zero then the threshold function passes on zero. If the value is more than zero or equal to zero then threshold function passes on a one.
