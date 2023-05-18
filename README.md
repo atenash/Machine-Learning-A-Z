@@ -229,7 +229,11 @@ It is the basic building block of artificial neuron networks. Our first challeng
 
 ![Neuron 1.jpeg](https://github.com/atenash/Machine-Learning-A-Z/blob/main/Neuron%201.jpeg)
 
-Next thing that I want to talk is weights.  
 
 
+Next thing that I want to talk about is weights. Weights are crucial to our artificial neural networks functioning because neural networks learn by adjusting the weights. The neural network decides in every single case what signal is important, what signal is not important to a certain neuron. What signal gets passed along and what signal doesn't, or to what strength, to what extent signals get passed along. So weights are crucial. They are the things that get adjusted through the process of learning. Like when you're training out into artificial neural network, you're basically adjusting all of the weights in all the synapses across this whole neural network. And that's where gradient descent and back propagation come into play.
+
+So signals go into the neuron and what happens in the neuron. Just add up, multiply by the weight and add them up.And then it applies an activation function.
+
+![Neuron 2.jpeg](https://github.com/atenash/Machine-Learning-A-Z/blob/main/Neuron%201.jpeg)
 
