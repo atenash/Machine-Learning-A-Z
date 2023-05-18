@@ -279,4 +279,4 @@ So in the first input layer, we have some inputs. They're sent off to our first 
 
 
 
-![hyperbolic.jpeg](https://github.com/atenash/Machine-Learning-A-Z/blob/main/hyperbolic.jpeg)
+![apply activation.jpeg](https://github.com/atenash/Machine-Learning-A-Z/blob/main/apply%20activation.jpeg)
