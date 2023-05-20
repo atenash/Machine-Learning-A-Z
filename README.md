@@ -339,3 +339,7 @@ Then the errors are back propagated through the network in the opposite directio
 
 
 ![back propagation.jpeg](https://github.com/atenash/Machine-Learning-A-Z/blob/main/back%20propagation.jpeg)
+
+
+
+![steps.jpeg](https://github.com/atenash/Machine-Learning-A-Z/blob/main/steps.jpeg)
