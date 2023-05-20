@@ -23,9 +23,9 @@ Here is the list of topics we will be covering in this tutorial:
  
  * [Deep Learning](#deep-learning)
 
-  - [What is_Deep_Learning?](#what-is-deep-learning)
-  - [Deep_Learning_Sections?](#deep-learning-sections)
-  - [How Do Neural_Network_Learn?](#how-do-neural-network-learn?)
+  - [What is Deep Learning?](#what-is-deep-learning)
+  - [Deep Learning Sections?](#deep-learning-sections)
+  - [How Do Neural Network Learn?](#how-do-neural-network-learn?)
   - [Missing Data](#missing-data)
     
         
