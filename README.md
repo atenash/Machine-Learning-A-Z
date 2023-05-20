@@ -26,7 +26,7 @@ Here is the list of topics we will be covering in this tutorial:
   - [What is Deep Learning?](#what-is-deep-learning)
   - [Deep Learning Sections?](#deep-learning-sections)
   - [How Do Neural Network Learn?](#how-do-neural-network-learn)
-  - [Missing Data](#missing-data)
+  - [Gradient Descent](#gradient-descent)
     
         
      
@@ -303,3 +303,6 @@ Our goal is to minimize the cost function. So all we can do is update the weight
 
 
 
+## Gradient Descent
+
+![cost function.jpeg](https://github.com/atenash/Machine-Learning-A-Z/blob/main/cost%20function.jpeg)
