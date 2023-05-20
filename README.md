@@ -305,4 +305,4 @@ Our goal is to minimize the cost function. So all we can do is update the weight
 
 ## Gradient Descent
 
-![cost function.jpeg](https://github.com/atenash/Machine-Learning-A-Z/blob/main/cost%20function.jpeg)
+![gradient descent.jpeg](https://github.com/atenash/Machine-Learning-A-Z/blob/main/gradient%20descent.jpeg)
