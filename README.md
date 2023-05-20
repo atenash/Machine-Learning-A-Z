@@ -25,7 +25,7 @@ Here is the list of topics we will be covering in this tutorial:
 
   - [What is_Deep_Learning?](#what-is-deep-learning)
   - [Deep_Learning_Sections?](#deep-learning-sections)
-  - [Encoding categorical Data](#encoding-categorical-data)
+  - [How Do Neural_Network_Learn?](#how-do-neural-network-learn?)
   - [Missing Data](#missing-data)
     
         
@@ -280,3 +280,7 @@ So in the first input layer, we have some inputs. They're sent off to our first 
 
 
 ![apply activation.jpeg](https://github.com/atenash/Machine-Learning-A-Z/blob/main/apply%20activation.jpeg)
+
+
+
+## How Do Neural Network Learn?
