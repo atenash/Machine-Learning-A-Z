@@ -27,6 +27,8 @@ Here is the list of topics we will be covering in this tutorial:
   - [Deep Learning Sections?](#deep-learning-sections)
   - [How Do Neural Network Learn?](#how-do-neural-network-learn)
   - [Gradient Descent](#gradient-descent)
+  - [Stochastic Gradient Descent](#stochastic-gradient-descent)
+  - [Back Propagation](#back-propagation)
     
         
      
@@ -304,5 +306,21 @@ Our goal is to minimize the cost function. So all we can do is update the weight
 
 
 ## Gradient Descent
+
+![gradient descent.jpeg](https://github.com/atenash/Machine-Learning-A-Z/blob/main/gradient%20descent.jpeg)
+
+
+
+## Stochastic Gradient Descent
+
+With gradient descent, the cost function should be convex. What if our cost function is not convex? We could find a local minimum of the cost function rather than the global one.
+
+![gradient descent.jpeg](https://github.com/atenash/Machine-Learning-A-Z/blob/main/gradient%20descent.jpeg)
+
+
+
+Let's have a look at the two differences between the normal gradient that we talked about and the stochastic gradient descent.
+So normal gradient descent is when we take all of our rows and plug them into our neural network. The stochastic gradient descent method is a bit different. Here we take the row one by one. So we take this row, we run our neural network and then we adjust the weights. Then we move on to the second row. We take the second row, we run our neural network, we look at the cost function and then we adjust the weights again.
+
 
 ![gradient descent.jpeg](https://github.com/atenash/Machine-Learning-A-Z/blob/main/gradient%20descent.jpeg)
