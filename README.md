@@ -284,3 +284,9 @@ So in the first input layer, we have some inputs. They're sent off to our first 
 
 
 ## How Do Neural Network Learn?
+
+It's time to find out how neural network learn?
+One way is hard coded coding where you actually tell the program specific rules and what outcomes you want. You just guide it throughout the whole way and you account for all the possible options that the program has to deal with. On the other hand, you have neural networks where you create a facility for the program to be able to understand what it needs to do on its own. Two fundamentally different approaches.
+A good example that I can give you is for instance, how do you distinguish between an apple and a pineapple?
+
+For the first approach, you would program things in like the apple's shape have to be like this. Look out for colors. You'd describe all things and you'd have conditions like if the color is red, then apple. If the shape is oval, then pineapple and so on. On the other hand, for a neural network, you just code the neural network.So you code the architecture and then you point the neural network at a folder with all these apples and pineapples with images of them which are already categorized. And you tell it, Go and learn what an apple is. Go and learn what a pineapple is. And the neural network will understand everything it needs to understand on its own.
