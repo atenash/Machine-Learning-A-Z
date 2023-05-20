@@ -332,10 +332,10 @@ So normal gradient descent is when we take all of our rows and plug them into ou
 Forward propagation is where information is entered into the input layer and then is propagated forward to get our Y Hats(output values) and then we compare those to the actual values that we have in our training set, then we calculate the errors.
 
 
-![comparing GD SGD.jpeg](https://github.com/atenash/Machine-Learning-A-Z/blob/main/comparing%20GD%20SGD.jpeg)
+![forward propagation.jpeg](https://github.com/atenash/Machine-Learning-A-Z/blob/main/forward%20propagation.jpeg)
 
 
 Then the errors are back propagated through the network in the opposite direction. And that allows us to train the network by adjusting the weight.
 
 
-![comparing GD SGD.jpeg](https://github.com/atenash/Machine-Learning-A-Z/blob/main/comparing%20GD%20SGD.jpeg)
+![back propagation.jpeg](https://github.com/atenash/Machine-Learning-A-Z/blob/main/back%20propagation.jpeg)
