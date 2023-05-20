@@ -296,3 +296,10 @@ Let's see how our perceptron learns.So let's say we have some input values that 
 
 
 
+
+
+
+Our goal is to minimize the cost function. So all we can do is update the weight. We feed these three values into our neural network. And then we're going to be comparing the result to y. We adjust the weights and repeat this process until the cost function becomes zero.
+
+
+
