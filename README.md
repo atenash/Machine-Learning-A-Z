@@ -343,3 +343,21 @@ Then the errors are back propagated through the network in the opposite directio
 
 
 ![steps.jpeg](https://github.com/atenash/Machine-Learning-A-Z/blob/main/steps.jpeg)
+
+
+
+###### Artificial Nueral Network Coding
+      import numpy as np
+      import pandas as pd
+      import tensorflow as tf
+      dataset = pd.read_csv('test.csv')
+      X = dataset.iloc[:, 3:-1].values
+      y = dataset.iloc[:, -1].values
+      from sklearn.model_selection import train_test_split
+      X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
+      
+      Initializing the ANN
+      
+      ann = tf.keras.models.Sequential()
+      
+      ann.add(tf.keras.layers.Dense(units=6, activation='relu'))
