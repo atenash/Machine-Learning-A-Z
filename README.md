@@ -83,6 +83,24 @@ So very simply, France would, for example have the vector 1 0 0. Canada would ha
       from sklearn.preprocessing import LabelEncoder
       le=LabelEncoder()
       y=le.fit_transform(y)
+  
+  We cn also use pandas.get_dummies() command to encode the categorical variables, but in this case the following issues could arise. One of the assumptions of a regression model is that the observations must be independent of each other. Multicollinearity occurs when independent variables in a regression model are correlated. So why is correlation a problem? As Frost states,  “a key goal of regression analysis is to isolate the relationship between each independent variable and the dependent variable. The interpretation of a regression coefficient is that it represents the mean change in the dependent variable for each one unit change in an independent variable when you hold all of the other independent variables constant.”
+
+If all the variables are correlated, it will become difficult for the model to tell how strongly a particular variable affects the target since all the variables are related. In such a case, the coefficient of a regression model will not convey the correct information.
+
+Multicollinearity is undesirable, and every time we encode variables with pandas.get_dummies(), we’ll encounter this issue. One way to overcome this problem is by dropping one of the generated columns. 
+
+       pd.get_dummies(df, drop_first=True)
+       
+
+We’ve resolved multicollinearity, but another issue lurks when we use dummy_encoding. Mismatched columns between train set and test set. 
+
+       # Dummy encoding Training set
+       X_train_encoded = pd.get_dummies(X_train)
+       # Saving the columns in a list
+       cols = X_train_encoded.columns.tolist()
+       X_test_encoded = pd.get_dummies(X_test)
+       X_test_encoded = X_test_encoded.reindex(columns=cols).fillna(0)
     
 ## Missing Data
    
