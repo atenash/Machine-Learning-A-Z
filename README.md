@@ -12,6 +12,7 @@ Here is the list of topics we will be covering in this tutorial:
 * [Supervised learning](#supervised-learning)
 
 * [Regression](#regression)
+   - [Decision tree Regression](#decision-tree-regression)
 
 * [Unsupervised learning](#supervised-learning)
 
@@ -178,6 +179,15 @@ Question 2: How do I get the final regression equation y = b0 + b1 x with the fi
   ###### Question 2
     print(regressor.coef_)
     print(regressor.intercept_)
+    
+    
+    
+   ###### Decision tree Regression
+   
+So once you run the regression tree or decision tree algorithm the scatterplot of your data will be split up into segments. How and where these splits are        conducted is determined by the algorithm. And it is actually involves looking at something called the information entropy and it is a mathematical concept. The    final splits are called leaves. When we want to predict for a new data, according to its leaf, the average of values on that leaf( split) will assign as a        result to a new data. 
+    from sklearn.tree import DecisionTreeRegressor
+    model=DecisionTreeRegressor()
+    model.fit(x,y)
 
  
  # Unsupervised learning
