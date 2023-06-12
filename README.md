@@ -195,11 +195,11 @@ So once you run the regression tree or decision tree algorithm the scatterplot o
  
  # Ensemble Learning
  
- Random forest is a version of ensemble learning. Ensemble learning is when you take multiple algorithms or the same algorithm multiple times and you put them     together to make something much more powerful than the original.
+  Ensemble learning is when you take multiple algorithms or the same algorithm multiple times and you put them     together to make something much more powerful     than the original.
  
 
    ###### Random Forest
-   pick at random K data points drom train set. Build the decision tree associated to these K data points. Choose the number of Ntrees that you want to build and    you repeat steps 1 and 2 on it. And  finally you use all of them to predict: for a new data point, make each one of your Ntrees predict the value of Y and        assign the new data point the average value of Y from all the predictions.  
+   Random forest is a version of ensemble learning. pick at random K data points drom train set. Build the decision tree associated to these K data points. Choose    the number of Ntrees that you want to build and you repeat steps 1 and 2 on it. And  finally you use all of them to predict: for a new data point, make each      one  of your Ntrees predict the value of Y and  assign the new data point the average value of Y from all the predictions.  
  # Unsupervised learning
  
  Now, unsupervised learning is different. Here, we don't have answers, and the model has to think for itself. So, for example, we might have input data for these images without any labels, supply them to the model and ask them to group these fruits into different categories, even though we don't know the category,
