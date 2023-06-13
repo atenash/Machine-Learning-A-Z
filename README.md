@@ -12,6 +12,8 @@ Here is the list of topics we will be covering in this tutorial:
 * [Supervised learning](#supervised-learning)
 
 * [Regression](#regression)
+   - [Simple Linear Regression](#simple-linear-regression)
+   - [P_value](#p_value)
    - [Decision tree Regression](#decision-tree-regression)
  
 * [Ensemble Learning](#ensemble-learning)
@@ -156,12 +158,14 @@ or labels for these apples. And then you supply that to the model. You ask the m
 
    Regression models (both linear and non-linear) are used for predicting a real value. Let's have a look at simple linear regression equation.
    
+   
+   ## Simple Linear Regression
    ![Regression Equation](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*GSAcN9G7stUJQbuOhu0HEg.png)
    
    
    
    We will look at the parts of this equation one by one. So on the left, we have our dependent variable, which we're trying to predict.
-   On the right, we have our independent variable, which is the predictor. Here we have b0, which is the constant, and b1 is the slope coefficient.
+   On the right, we have our independent variable, which is the predictor. Here we have b0 which is the constant(intercept), and b1 is the slope coefficient.
    
    ###### Simple Linear Regression
      from sklearn.linear_model import LinearRegression
@@ -183,7 +187,14 @@ Question 2: How do I get the final regression equation y = b0 + b1 x with the fi
     print(regressor.intercept_)
     
     
-    
+   ## P_value
+   The P-Value
+   The P-value is a statistical number to conclude if there is a relationship between independent and dependent variable. We test if the true value of the coefficient is equal to zero (no relationship) or not.
+   The statistical test for this is called Hypothesis testing.
+    •	A low P-value (< 0.05) means that the coefficient is likely not to equal zero(There is a relation).
+    •	A high P-value (> 0.05) means that we cannot conclude that the explanatory variable affects the dependent variable 
+    •	A high P-value is also called an insignificant P-value.
+
    ###### Decision tree Regression
    
 So once you run the regression tree or decision tree algorithm the scatterplot of your data will be split up into segments. How and where these splits are        conducted is determined by the algorithm. And it is actually involves looking at something called the information entropy and it is a mathematical concept. The    final splits are called leaves. When we want to predict for a new data, according to its leaf, the average of values on that leaf( split) will assign as a        result to a new data.
