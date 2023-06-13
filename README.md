@@ -188,12 +188,52 @@ Question 2: How do I get the final regression equation y = b0 + b1 x with the fi
     
     
    ## P_value
-   The P-Value
+  
    The P-value is a statistical number to conclude if there is a relationship between independent and dependent variable. We test if the true value of the coefficient is equal to zero (no relationship) or not.
+   
    The statistical test for this is called Hypothesis testing.
-    •	A low P-value (< 0.05) means that the coefficient is likely not to equal zero(There is a relation).
-    •	A high P-value (> 0.05) means that we cannot conclude that the explanatory variable affects the dependent variable 
-    •	A high P-value is also called an insignificant P-value.
+    
+     •	A low P-value (< 0.05) means that the coefficient is likely not to equal zero(There is a relation).
+    
+     •	A high P-value (> 0.05) means that we cannot conclude that the explanatory variable affects the dependent variable 
+    
+     •	A high P-value is also called an insignificant P-value.
+    
+   Hypothesis testing is a statistical procedure to test if your results are valid. In our example, we are testing if the true coefficient of “Average Pulse” and    the intercept is equal to zero.
+   
+   Hypothesis test has two statements. The null hypothesis and the alternative hypothesis.
+   
+     •	The null hypothesis can be shortly written as H0
+   
+     •	The alternative hypothesis can be shortly written as HA
+    
+  Mathematically written:
+  
+  H0: Average Pulse = 0
+  
+  HA: Average Pulse ≠ 0
+  
+  H0: Intercept = 0
+  
+  HA: Intercept ≠ 0
+  
+  The sign ≠ means "not equal to"
+  
+  Hypothesis Testing and P-value
+  
+The null hypothesis can either be rejected or not. If we reject the null hypothesis, we conclude that it exists a relationship between “Average Pulse” and “Calorie_Burnage”. The P-value is used for this conclusion. A common threshold of the P-value is 0.05.
+
+Note: A P-value of 0.05 means that 5% of the times, we will falsely reject the null hypothesis. It means that we accept that 5% of the times, we might falsely have concluded a relationship.
+
+If the P-value is lower than 0.05, we can reject the null hypothesis and conclude that it exists a relationship between the variables.
+
+However, the P-value of “Average Pulse” is 0.824. So, we cannot conclude a relationship between “Average Pulse” and “Calorie_Burnage”.
+
+It means that there is an 82.4% chance that the true coefficient of “Average Pulse” is zero.
+
+The intercept is used to adjust the regression function's ability to predict more precisely. It is therefore uncommon to interpret the P-value of the intercept.
+
+
 
    ###### Decision tree Regression
    
