@@ -14,8 +14,8 @@ Here is the list of topics we will be covering in this tutorial:
 * [Regression](#regression)
    - [Simple Linear Regression](#simple-linear-regression)
    - [P_value](#p_value)
-   - [Decision tree Regression](#decision-tree-regression)
    - [Multiple Linear Regression](#multiple-linear-regression)
+   - [Decision tree Regression](#decision-tree-regression)
  
 * [Ensemble Learning](#ensemble-learning)
    - [Random Forest](#random-forest)
