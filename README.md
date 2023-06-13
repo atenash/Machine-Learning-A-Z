@@ -15,6 +15,7 @@ Here is the list of topics we will be covering in this tutorial:
    - [Simple Linear Regression](#simple-linear-regression)
    - [P_value](#p_value)
    - [Decision tree Regression](#decision-tree-regression)
+   - [Multiple Linear Regression](#multiple-linear-regression)
  
 * [Ensemble Learning](#ensemble-learning)
    - [Random Forest](#random-forest)
@@ -233,8 +234,27 @@ It means that there is an 82.4% chance that the true coefficient of “Average P
 
 The intercept is used to adjust the regression function's ability to predict more precisely. It is therefore uncommon to interpret the P-value of the intercept.
 
+## Multiple Linear Regression
 
+In multiple linear regression, we have more than one indepandant variable. Now with many indepandant features, the challenge is which features should be remained and which of them should be removed. This challenge is called building the model or selecting the right variables. 
 
+One of the most common way of bulding the model is Backward Elimination. 
+
+Step1: Select a significance level to stay in the model.(e.g. SL=0.05)
+
+Step2:  Fit the full model with all possible predicter.( you put all of your variables into your model)
+
+Step3: Considered the predicter with the highest P-value. If P-value>SL go to step 4, otherwise FIN
+
+Step4: Remove the predictor
+
+Step5: Fit the model without the variable
+
+   ###### Multiple Linear Regression
+     from sklearn.linear_model import LinearRegression
+     reg=LinearRegression()
+     reg.fit(x_train,y_train)
+     
    ###### Decision tree Regression
    
 So once you run the regression tree or decision tree algorithm the scatterplot of your data will be split up into segments. How and where these splits are        conducted is determined by the algorithm. And it is actually involves looking at something called the information entropy and it is a mathematical concept. The    final splits are called leaves. When we want to predict for a new data, according to its leaf, the average of values on that leaf( split) will assign as a        result to a new data.
